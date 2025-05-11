@@ -2,12 +2,8 @@
 
 This repository contains the back-end for **Timekeep**, a time-management app built with Elixir and Phoenix. Timekeep lets you create recurring time counters with specific goals, keeping you accountable and motivated to spend dedicated hours on any activity.
 
----
+![Realme 10](https://github.com/user-attachments/assets/a49d1381-3a95-4eca-98d0-91027cc41cea)
 
-## Mock-up
-
-
----
 
 ## Usage
 
