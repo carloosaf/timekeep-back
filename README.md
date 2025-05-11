@@ -1,18 +1,58 @@
-# Timekeep
+## Timekeep
 
-To start your Phoenix server:
+This repository contains the back-end for **Timekeep**, a time-management app built with Elixir and Phoenix. Timekeep lets you create recurring time counters with specific goals, keeping you accountable and motivated to spend dedicated hours on any activity.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+---
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Mock-up
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+---
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## Usage
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/timekeep-backend.git
+   ```
+
+2. **Navigate into the project**
+
+   ```bash
+   cd timekeep-backend
+   ```
+
+3. **Install Elixir dependencies**
+
+   ```bash
+   mix deps.get
+   ```
+
+4. **Set up the database**
+
+   ```bash
+   # Create, migrate, and seed the database
+   mix ecto.setup
+   ```
+
+5. **Start the Phoenix server**
+
+   ```bash
+   mix phx.server
+   ```
+
+6. **Running in development**
+
+   * By default, the server runs at `http://localhost:4000`.
+   * Use `iex -S mix phx.server` for an interactive session.
+
+7. **Running tests**
+
+   ```bash
+   mix test
+   ```
+
+---
+
+Feel free to adjust any configuration in `config/dev.exs` or `config/test.exs` as needed. If you have questions, check out the [Phoenix Guides](https://hexdocs.pm/phoenix).
