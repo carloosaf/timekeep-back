@@ -48,7 +48,6 @@ This repository contains the back-end for **Timekeep**, a time-management app bu
    ```bash
    mix test
    ```
+## Disclaimer 
 
----
-
-Feel free to adjust any configuration in `config/dev.exs` or `config/test.exs` as needed. If you have questions, check out the [Phoenix Guides](https://hexdocs.pm/phoenix).
+This is an MVP of Timekeep, future development might continue in a closed-source approach.
