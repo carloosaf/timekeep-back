@@ -64,3 +64,6 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+config :timekeep, TimekeepWeb.Auth.JwksStrategy,
+  jwks_url: "https://fancy-cougar-61.clerk.accounts.dev/.well-known/jwks.json"
