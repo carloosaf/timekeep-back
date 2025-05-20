@@ -15,21 +15,12 @@ defmodule TimekeepWeb.UserAuth do
   end
 
   defp validate_user_token(conn) do
-    header = get_req_header(conn, "authorization")
-
-    if token = List.first(header) do
-      token =
-        token
-        |> String.split(" ")
-        |> Enum.at(1)
-
-      if token == nil do
-        Phoenix.Controller.json(conn, %{code: "UNAUTHORIZED", message: "The token is invalid"})
-      end
-
+    with [auth_header | _] <- get_req_header(conn, "authorization"),
+         ["Bearer", token] <- String.split(auth_header, " ", parts: 2),
+         true <- token != nil do
       Token.verify_and_validate(token)
     else
-      {:error, :no_token}
+      _ -> {:error, :no_token}
     end
   end
 

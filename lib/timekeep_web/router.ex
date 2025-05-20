@@ -5,10 +5,11 @@ defmodule TimekeepWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug :fetch_current_user
   end
 
   scope "/api/v1", TimekeepWeb do
-    pipe_through [:api, :fetch_current_user, :require_authenticated_user]
+    pipe_through [:api, :require_authenticated_user]
 
     resources "/counters", CounterController do
       resources "/sessions", SessionController
